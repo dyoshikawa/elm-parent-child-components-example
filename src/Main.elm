@@ -45,5 +45,4 @@ view : Model -> Html Msg
 view model =
     div []
         [ model.counterModel |> Counter.view |> Html.map CounterMsg
-        , p [] [ text ("親: " ++ String.fromInt model.counterModel.count) ]
         ]
